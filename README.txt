@@ -2,16 +2,22 @@ To try framework:
 
 1) Run the app 
 
-2) POST localhost:8080/ping (header=> Content-Type: application/json; body: { "name": "Something"})
+2) POST localhost:8080/ping 
+   (
+    headers:
+        Content-Type: application/json
+    body:
+        {"name": "Something"}
+   )
 
-    Creates entry in Mongo
+    Result: Creates entry in Mongo. (see message on screen)
     
 3) GET localhost:8080/ping/Something 
 
-    finds ping in Mongo, and prints it.
+    Result: finds ping in Mongo, and prints it. (see message on screen)
     
 4) GET localhost:8080/ping
 
-   prints all pings saved in Mongo
+   Result: prints all pings saved in Mongo. (see message on screen)
    
    
