@@ -14,8 +14,8 @@ public class PingTest extends BaseTest {
     
      @Test
     public void test_ping_whenValidParams_shouldConstructPing(){
-         Ping ping = new Ping("test", new Date(123456789)); 
-         Assert.assertEquals(ping.toString(), "Ping{name='test', created=Fri Jan 02 11:17:36 CET 1970}");
+         Ping ping = new Ping("test", new Date(123456789));
+         Assert.assertEquals(ping.toString(), "Ping{name='test', created=Fri Jan 02 10:17:36 UTC 1970}");
      }
     @Test(expected = IllegalArgumentException.class)
     public void test_ping_whenInvalidParams_shouldThrowException(){
